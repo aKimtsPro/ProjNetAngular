@@ -41,7 +41,7 @@ namespace DemoPOO
             Console.WriteLine("nombre de page : " + l.NbrPage);
             Console.WriteLine("marque page : " + l.MarquePage);
 
-            l.NbrPage = 5;
+            //l.NbrPage = 5;
 
             Console.ReadLine();
         }
