@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Personne.cs" />
+    <Compile Include="ExoBanque\Courant.cs" />
+    <Compile Include="ExoBanque\Personne.cs" />
+    <Compile Include="ExoClass\Personne.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
