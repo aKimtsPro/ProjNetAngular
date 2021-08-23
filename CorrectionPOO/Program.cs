@@ -32,19 +32,31 @@ namespace CorrectionPOO
 
             // ExoTache
 
-            Tache t = new Tache("faire les courses");
+            //Tache t = new Tache("faire les courses");
 
-            t.Status = StatusTache.EN_PREPARATION;
-            Console.WriteLine(t.Status);
+            //t.Status = StatusTache.EN_PREPARATION;
+            //Console.WriteLine(t.Status);
 
-            t.Status = StatusTache.EN_COURS;
-            Console.WriteLine(t.Status);
+            //t.Status = StatusTache.EN_COURS;
+            //Console.WriteLine(t.Status);
 
-            t.Status = StatusTache.EN_PREPARATION;
-            Console.WriteLine(t.Status);
+            //t.Status = StatusTache.EN_PREPARATION;
+            //Console.WriteLine(t.Status);
 
-            Console.WriteLine( t.Avancer() );
-            Console.WriteLine( t.Status );
+            //Console.WriteLine( t.Avancer() );
+            //Console.WriteLine( t.Status );
+
+            // ExoBanque - part 2
+
+            Banque banque = new Banque("big mony");
+
+            banque.Ajouter(new Courant("1", new Personne("luc", null, DateTime.Now), 0));
+            banque.Ajouter(new Courant("1", new Personne("lucie", null, DateTime.Now), 0));
+            banque.Ajouter(new Courant("2", new Personne("marie", null, DateTime.Now), 10));
+            banque.Ajouter(new Courant("3", new Personne("dominique", null, DateTime.Now), 200));
+            banque.Ajouter(new Courant("4", new Personne("sami", null, DateTime.Now), 3000));
+
+            Console.WriteLine(banque["1"].Titulaire.Nom );
 
             Console.ReadLine();
         }

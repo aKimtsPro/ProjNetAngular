@@ -22,14 +22,14 @@ namespace DemoPOO.Indexeur
 
         public int this[ Locataire key ]
         {
-            get
+            get // int method(Locataire key);
             {
                 if (Locataires.ContainsKey(key))
                     return Locataires[key];
 
                 return 0;
             }
-            set
+            set // void method(Locataire key, int value);
             {
                 if (Locataires.ContainsKey(key))
                 {
@@ -37,7 +37,24 @@ namespace DemoPOO.Indexeur
                 }
             }
         }
-       
+
+        public List<Locataire> this[ string key ]
+        {
+            get // List<Locataire> method(string key);
+            {
+                List<Locataire> locWithName = new List<Locataire>();
+
+
+                foreach (Locataire loc in Locataires.Keys)
+                {
+                    if (loc.Nom == key)
+                        locWithName.Add(loc);
+                }
+
+                return locWithName;
+            }
+        }
+
         // Obtenir le loyer d'un locataire a partir de l'appartement
         // Si le locataire n'est pas dans cet appart, => 0
         public int GetLoyerOf( Locataire locataire )

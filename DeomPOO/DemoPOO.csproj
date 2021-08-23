@@ -46,6 +46,9 @@
     <Compile Include="Encapsulation\DemoAccess.cs" />
     <Compile Include="Encapsulation\Livre.cs" />
     <Compile Include="Encapsulation\Personne.cs" />
+    <Compile Include="Indexeur\Appartement.cs" />
+    <Compile Include="Indexeur\Locataire.cs" />
+    <Compile Include="Indexeur\Proprietaire.cs" />
     <Compile Include="Moteur.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
