@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CorrectionPOO.ExoTache;
 
 namespace CorrectionPOO
 {
@@ -21,15 +22,31 @@ namespace CorrectionPOO
             //p2.QuestionnerAmi();
 
             // ExoBanque
-            Personne p = new Personne("luc", "luc", DateTime.Now);
-            Courant c = new Courant("1", p, 100);
-            // solde : 0 | ligne : 100
-            Console.WriteLine($"Solde : { c.Solde } | Ligne : { c.LigneCredit } ");
-            c.Depot(-50);
-            Console.WriteLine($"Solde : { c.Solde } | Ligne : { c.LigneCredit } ");
+            //Personne p = new Personne("luc", "luc", DateTime.Now);
+            //Courant c = new Courant("1", p, 100);
+            //// solde : 0 | ligne : 100
+            //Console.WriteLine($"Solde : { c.Solde } | Ligne : { c.LigneCredit } ");
+            //c.Depot(-50);
+            //Console.WriteLine($"Solde : { c.Solde } | Ligne : { c.LigneCredit } ");
+
+
+            // ExoTache
+
+            Tache t = new Tache("faire les courses");
+
+            t.Status = StatusTache.EN_PREPARATION;
+            Console.WriteLine(t.Status);
+
+            t.Status = StatusTache.EN_COURS;
+            Console.WriteLine(t.Status);
+
+            t.Status = StatusTache.EN_PREPARATION;
+            Console.WriteLine(t.Status);
+
+            Console.WriteLine( t.Avancer() );
+            Console.WriteLine( t.Status );
 
             Console.ReadLine();
-
         }
     }
 }

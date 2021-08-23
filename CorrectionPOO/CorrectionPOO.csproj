@@ -46,6 +46,8 @@
     <Compile Include="ExoBanque\Courant.cs" />
     <Compile Include="ExoBanque\Personne.cs" />
     <Compile Include="ExoClass\Personne.cs" />
+    <Compile Include="ExoTache\StatusTache.cs" />
+    <Compile Include="ExoTache\Tache.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
